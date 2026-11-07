@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+  <link href="styles.css?v=2" rel="stylesheet"/>
+  <meta name="description" content="Portfolio of Sai Teja Bomma — Python, C# and .NET developer."/>
+  <meta name="theme-color" content="#111813"/>
+  <title>Sai Teja Bomma — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <style>
+    /* Critical loader styles so the splash shows before CSS loads */
+    #page-loader{position:fixed;inset:0;z-index:99999;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#0a0e0b;color:#f0f4ec;transition:opacity .7s cubic-bezier(.22,1,.36,1),visibility .7s}
+    #page-loader.is-done{opacity:0;visibility:hidden;pointer-events:none}
+    #page-loader .loader-mark{width:72px;height:72px;border-radius:18px;background:linear-gradient(135deg,#c7f36b,#a8e063);color:#1a2416;font:800 1.35rem/1 Manrope,DM Sans,system-ui,sans-serif;display:grid;place-items:center;letter-spacing:-.06em;box-shadow:0 0 40px rgba(199,243,107,.35);animation:loaderPulse 1.4s ease-in-out infinite}
+    #page-loader .loader-name{margin-top:22px;font:700 .95rem/1.3 Manrope,DM Sans,system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#c5d2c0}
+    #page-loader .loader-bar{width:160px;height:3px;margin-top:28px;border-radius:99px;background:rgba(199,243,107,.15);overflow:hidden}
+    #page-loader .loader-bar > i{display:block;height:100%;width:0;border-radius:99px;background:linear-gradient(90deg,#c7f36b,#8fd94a);animation:loaderFill 1.15s cubic-bezier(.22,1,.36,1) forwards}
+    #page-loader .loader-hint{margin-top:14px;font-size:.72rem;color:#8a9886;letter-spacing:.08em;text-transform:uppercase}
+    @keyframes loaderPulse{0%,100%{transform:scale(1);box-shadow:0 0 40px rgba(199,243,107,.35)}50%{transform:scale(1.06);box-shadow:0 0 56px rgba(199,243,107,.5)}}
+    @keyframes loaderFill{0%{width:0}100%{width:100%}}
+    @media (prefers-reduced-motion:reduce){#page-loader .loader-mark{animation:none}#page-loader .loader-bar > i{animation:none;width:100%}}
+  </style>
+ </head>
+ <body>
+  <div id="page-loader" aria-hidden="true">
+   <div class="loader-mark">ST</div>
+   <div class="loader-name">Sai Teja Bomma</div>
+   <div class="loader-bar"><i></i></div>
+   <div class="loader-hint">Loading portfolio</div>
+  </div>
+  <header class="inner">
+   <nav aria-label="Sections" class="nav">
+    <a class="brand" href="#top">
+     <span>Sai Teja Bomma</span>
+    </a>
+    <button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation" class="nav-toggle" type="button">
+     ☰
+    </button>
+    <ul id="primary-navigation">
+     <li>
+      <a href="#about">
+       About
+      </a>
+     </li>
+     <li>
+      <a href="#projects">
+       Projects
+      </a>
+     </li>
+     <li>
+      <a href="#experience">
+       Experience
+      </a>
+     </li>
+     <li>
+      <a href="#notes">
+       Notes
+      </a>
+     </li>
+     <li>
+      <a href="#contact">
+       Contact
+      </a>
+     </li>
+    </ul>
+   </nav>
+  </header>
+  <main id="top">
+   <div class="inner hero">
+    <div class="intro-copy">
+     <div aria-label="Profile photo" class="hero-portrait-wrap">
+      <span class="portrait-fallback">
+       ST
+      </span>
+      <img alt="Sai Teja profile photo" class="hero-portrait" loading="eager" src="images/saiimg.jpg"/>
+     </div>
+     <p class="kicker">
+      Software engineer &middot; Python &amp; AI
+     </p>
+     <h1>
+      Building useful digital experiences.
+     </h1>
+     <div class="offer-banner" role="status">
+      <span class="offer-pulse" aria-hidden="true"></span>
+      <div class="offer-copy">
+       <span class="offer-kicker">Offer received</span>
+       <strong>Accenture</strong>
+       <span class="offer-role">Advanced App Engineering Associate</span>
+      </div>
+     </div>
+     <p class="now-line">
+      <span>Now</span>
+      Joining Accenture as Advanced App Engineering Associate.
+     </p>
+     <p class="lead">
+      I&rsquo;m a Computer Science graduate focused on Python development, full-stack applications and practical AI solutions. I enjoy turning ideas into clear, reliable products &mdash; from OCR-powered workflows to practical software applications.
+     </p>
+     <div class="btns">
+      <a class="btn" href="#projects">
+       Explore my work
+       <span aria-hidden="true">
+        &nearrow;
+       </span>
+      </a>
+      <a class="btn outline" href="https://www.linkedin.com/in/sai-teja-bomma/" rel="noopener" target="_blank">
+       Connect on LinkedIn
+      </a>
+      <button class="btn outline" type="button" id="resume-preview" data-resume="images/saitejresume.pdf">
+       Preview résumé
+      </button>
+     </div>
+    </div>
+    <div aria-hidden="true" class="blob">
+     <svg class="shape" preserveaspectratio="xMidYMid meet" viewbox="0 0 500 500">
+      <path d="M385 28C470 48 522 128 498 232C480 318 418 356 340 398C262 440 170 474 108 402C48 332 88 250 120 190C152 128 202 62 282 34C322 20 352 20 385 28Z" fill="#f0c24e">
+      </path>
+     </svg>
+     <div class="mono">
+      ST
+     </div>
+     <span class="chip c1">
+      Python
+     </span>
+     <span class="chip c2">
+      Django
+     </span>
+     <span class="chip c3">
+      Flask
+     </span>
+     <span class="chip c4">
+      C#
+     </span>
+     <span class="chip c5">
+      Accenture
+     </span>
+    </div>
+   </div>
+   <div class="inner sec" id="about">
+    <div class="about">
+     <div class="about-copy">
+      <p class="about-label">
+       A little about me
+      </p>
+      <h2>
+       Curious by nature.
+       <br/>
+       Developer by passion.
+      </h2>
+      <p>
+       I&rsquo;m a Computer Science and Engineering graduate with a foundation in Python, C# and .NET development. I enjoy building practical, user-friendly applications, writing clean code and continuously improving my development skills while working collaboratively with a team.
+      </p>
+      <dl>
+       <div class="offer-row">
+        <dt>
+         Offer
+        </dt>
+        <dd>
+         Accenture &middot; Advanced App Engineering Associate
+        </dd>
+       </div>
+       <div>
+        <dt>
+         Education
+        </dt>
+        <dd>
+         B.Tech, Computer Science &amp; Engineering &middot; Sri Indu College of Engineering &amp; Technology &middot; 2021&ndash;2025
+        </dd>
+       </div>
+       <div>
+        <dt>
+         Academic
+        </dt>
+        <dd>
+         CGPA 7.55 / 10 &middot; Intermediate 920 / 1000 &middot; SSC CGPA 9.7 / 10
+        </dd>
+       </div>
+       <div>
+        <dt>
+         Location
+        </dt>
+        <dd>
+         Hyderabad, Telangana
+        </dd>
+       </div>
+      </dl>
+      <a class="btn" href="#projects">
+       View selected projects
+       <span aria-hidden="true">
+        &nearrow;
+       </span>
+      </a>
+     </div>
+     <div class="about-side">
+      <div aria-hidden="true" class="disc">
+       <div>
+        <b>
+         2025
+        </b>
+        <span>
+         Computer Science &amp; Engineering
+        </span>
+       </div>
+      </div>
+      <div class="about-facts">
+       <div>
+        <strong>
+         Python
+        </strong>
+        <span>
+         Application development
+        </span>
+       </div>
+       <div>
+        <strong>
+         C# &amp; .NET
+        </strong>
+        <span>
+         Application development
+        </span>
+       </div>
+       <div>
+        <strong>
+         Web
+        </strong>
+        <span>
+         Full-stack applications
+        </span>
+       </div>
+       <div>
+        <strong>
+         OOP
+        </strong>
+        <span>
+         Clean, structured code
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="inner sec" id="projects">
+    <h2>
+     Projects
+    </h2>
+    <p class="sub">
+     Explore three projects across OCR, generative AI and natural language processing. Select &ldquo;Project overview&rdquo; on any project to open its animated workflow popup.
+    </p>
+    <div class="cards">
+     <article class="card">
+      <div class="txt">
+       <h3>
+        ViSiOCR
+       </h3>
+       <p>
+        A two-role visitor management system where users register visitors, extract government ID details with OCR and generate QR-based passes, while admins scan and validate passes.
+       </p>
+       <p class="res">
+    
+         About 80% less
+        
+        manual entry time, with more accurate data for security checks.
+       </p>
+       <ul class="tags">
+        <li>
+         Python
+        </li>
+        <li>
+         Django
+        </li>
+        <li>
+         Tesseract OCR
+        </li>
+       </ul>
+       <details class="project-details">
+        <summary>
+         Project overview
+         <span aria-hidden="true">
+          &nearrow;
+         </span>
+        </summary>
+        <div class="detail-body">
+         <h4>
+          Two user roles
+         </h4>
+         <div class="roles">
+          <div class="role">
+           <b>
+            1. User
+           </b>
+           <p>
+            Logs in, enters the visitor's visit date, time and duration, then uploads a government ID. OCR extracts the available ID details for review and pass creation.
+           </p>
+          </div>
+          <div class="role">
+           <b>
+            2. Admin
+           </b>
+           <p>
+            Logs in to the admin view, scans the visitor pass QR code and validates the pass before allowing entry.
+           </p>
+          </div>
+         </div>
+         <h4>
+          End-to-end flow
+         </h4>
+         <ul>
+          <li>
+           User login and visitor information entry.
+          </li>
+          <li>
+           Choose visit date, time and duration.
+          </li>
+          <li>
+           Upload a government ID; OCR extracts the text into structured fields.
+          </li>
+          <li>
+           Generate a visitor pass containing a unique QR code.
+          </li>
+          <li>
+           Admin scans the QR code to check and validate the pass.
+          </li>
+         </ul>
+         <p>
+          <b>
+           Core value:
+          </b>
+          Reduces manual visitor registration and makes entry verification quicker.
+         </p>
+        </div>
+       </details>
+       <a class="btn pill" href="https://github.com/Saitej2604" rel="noopener" target="_blank">
+        See GitHub
+       </a>
+      </div>
+      <div aria-hidden="true" class="art art-visitor">
+       <svg role="img" viewbox="0 0 360 250">
+        <defs>
+         <lineargradient id="passGlow" x1="0" x2="1" y1="0" y2="1">
+          <stop stop-color="#fff">
+          </stop>
+          <stop offset="1" stop-color="#fff8df">
+          </stop>
+         </lineargradient>
+        </defs>
+        <rect fill="url(#passGlow)" height="206" rx="20" stroke="#e6dfca" stroke-width="1.5" width="310" x="25" y="22">
+        </rect>
+        <rect fill="#24283b" height="43" rx="20" width="310" x="25" y="22">
+        </rect>
+        <path d="M25 45h310v20H25z" fill="#24283b">
+        </path>
+        <circle cx="49" cy="43" fill="#f0c24e" r="8">
+        </circle>
+        <text fill="#fff" font-size="11" font-weight="700" letter-spacing="1.3" x="65" y="48">
+         VISITOR PASS
+        </text>
+        <rect fill="#f4e8bf" height="91" rx="10" width="75" x="44" y="86">
+        </rect>
+        <circle cx="81" cy="117" fill="#d5b96c" r="18">
+        </circle>
+        <path d="M54 164c5-22 49-22 54 0" fill="#d5b96c">
+        </path>
+        <text fill="#8a8b96" font-size="9" font-weight="700" x="137" y="99">
+         VISITOR NAME
+        </text>
+        <rect fill="#25283a" height="8" rx="4" width="112" x="137" y="108">
+        </rect>
+        <text fill="#8a8b96" font-size="9" font-weight="700" x="137" y="137">
+         VALID UNTIL
+        </text>
+        <rect fill="#c6c8d2" height="7" rx="3.5" width="82" x="137" y="146">
+        </rect>
+        <rect fill="#fff" height="48" rx="5" stroke="#d9dbe2" width="48" x="267" y="88">
+        </rect>
+        <g fill="#25283a">
+         <path d="M273 94h13v13h-13zM296 94h13v13h-13zM273 117h13v13h-13z">
+         </path>
+         <path d="M277 98h5v5h-5zM300 98h5v5h-5zM277 121h5v5h-5zM292 113h5v5h-5zM302 114h7v5h-7zM291 124h6v5h-6zM302 124h5v5h-5z" fill="#fff">
+         </path>
+        </g>
+        <rect fill="#e8f3e9" height="18" rx="9" width="48" x="267" y="145">
+        </rect>
+        <text fill="#34744b" font-size="8" font-weight="700" text-anchor="middle" x="291" y="157">
+         ACTIVE
+        </text>
+        <path d="M44 193h271" stroke="#e7e2d6">
+        </path>
+        <text fill="#888a96" font-size="8" x="44" y="211">
+         SECURE ENTRY  &bull;  QR VERIFIED
+        </text>
+        <circle class="art-orbit" cx="312" cy="196" fill="#f0c24e" opacity=".9" r="17">
+        </circle>
+        <path d="M305 196l5 5 9-11" fill="none" stroke="#24283b" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+        </path>
+       </svg>
+       <span class="art-label">
+        OCR &middot; QR PASS
+       </span>
+      </div>
+     </article>
+     <article class="card flip">
+      <div class="txt">
+       <h3>
+        YouTube Transcript Summarizer
+       </h3>
+       <p>
+        A Flask web app where logged-in users submit a YouTube URL, generate an AI summary from the available transcript and ask follow-up questions about the video.
+       </p>
+       <ul class="tags">
+        <li>
+         Python
+        </li>
+        <li>
+         Flask
+        </li>
+        <li>
+         Google Generative AI API
+        </li>
+       </ul>
+       <details class="project-details">
+        <summary>
+         Project overview
+         <span aria-hidden="true">
+          &nearrow;
+         </span>
+        </summary>
+        <div class="detail-body">
+         <h4>
+          User workflow
+         </h4>
+         <ul>
+          <li>
+           User logs in to the application.
+          </li>
+          <li>
+           Adds the URL of a YouTube video.
+          </li>
+          <li>
+           The application retrieves the video's available transcript.
+          </li>
+          <li>
+           AI processes the transcript and generates a concise summary.
+          </li>
+          <li>
+           User can ask follow-up questions about the summary and receive contextual answers.
+          </li>
+         </ul>
+         <h4>
+          Key capabilities
+         </h4>
+         <p>
+          <b>
+           Transcript extraction:
+          </b>
+          Turns video speech into text for processing.
+         </p>
+         <p>
+          <b>
+           AI summarization:
+          </b>
+          Condenses long video content into key points.
+         </p>
+         <p>
+          <b>
+           Question answering:
+          </b>
+          Lets users explore specific topics without reviewing the entire video.
+         </p>
+        </div>
+       </details>
+       <a class="btn pill" href="https://github.com/Saitej2604" rel="noopener" target="_blank">
+        See GitHub
+       </a>
+      </div>
+      <div aria-hidden="true" class="art art-youtube">
+       <svg role="img" viewbox="0 0 360 250">
+        <rect fill="#fff" height="210" rx="18" stroke="#e3e5ed" width="324" x="18" y="20">
+        </rect>
+        <rect fill="#25283b" height="36" rx="18" width="324" x="18" y="20">
+        </rect>
+        <path d="M18 39h324v17H18z" fill="#25283b">
+        </path>
+        <circle cx="39" cy="38" fill="#f0c24e" r="7">
+        </circle>
+        <text fill="#fff" font-size="10" font-weight="700" x="54" y="42">
+         VIDEO INSIGHTS
+        </text>
+        <rect fill="#292d43" height="83" rx="11" width="132" x="34" y="72">
+        </rect>
+        <rect fill="#7d8296" height="83" opacity=".18" rx="11" width="132" x="34" y="72">
+        </rect>
+        <circle cx="100" cy="113" fill="#f0c24e" r="20">
+        </circle>
+        <path d="M94 102l17 11-17 11z" fill="#25283b">
+        </path>
+        <rect fill="#e1e3eb" height="5" rx="2.5" width="105" x="47" y="166">
+        </rect>
+        <rect fill="#e1e3eb" height="5" rx="2.5" width="73" x="47" y="178">
+        </rect>
+        <text fill="#999baa" font-size="8" font-weight="700" letter-spacing="1" x="187" y="82">
+         AI SUMMARY
+        </text>
+        <rect fill="#292d43" height="8" rx="4" width="132" x="187" y="94">
+        </rect>
+        <rect fill="#d9dbe4" height="6" rx="3" width="118" x="187" y="110">
+        </rect>
+        <rect fill="#d9dbe4" height="6" rx="3" width="126" x="187" y="122">
+        </rect>
+        <rect fill="#d9dbe4" height="6" rx="3" width="92" x="187" y="134">
+        </rect>
+        <rect fill="#fff8df" height="48" rx="10" stroke="#f0dfaa" width="140" x="184" y="161">
+        </rect>
+        <circle cx="198" cy="176" fill="#f0c24e" r="6">
+        </circle>
+        <rect fill="#8e8260" height="5" rx="2.5" width="97" x="210" y="173">
+        </rect>
+        <rect fill="#d5c99e" height="5" rx="2.5" width="112" x="196" y="188">
+        </rect>
+        <path d="M168 112h10" stroke="#f0c24e" stroke-linecap="round" stroke-width="3">
+        </path>
+        <path d="M174 106l6 6-6 6" fill="none" stroke="#f0c24e" stroke-width="2">
+        </path>
+       </svg>
+       <span class="art-label">
+        WATCH &middot; SUMMARIZE &middot; ASK
+       </span>
+      </div>
+     </article>
+     <article class="card">
+      <div class="txt">
+       <h3>
+        Fake News Detection
+       </h3>
+       <p>
+        A news-checking app where logged-in users upload or enter an article and receive a fake/real prediction score using text analysis and a Logistic Regression classifier.
+       </p>
+       <p class="res">
+        
+         95% accuracy
+        </b>
+        on a standard benchmark dataset.
+       </p>
+       <ul class="tags">
+        <li>
+         Python
+        </li>
+        <li>
+         Scikit-learn
+        </li>
+       </ul>
+       <details class="project-details">
+        <summary>
+         Project overview
+         <span aria-hidden="true">
+          &nearrow;
+         </span>
+        </summary>
+        <div class="detail-body">
+         <h4>
+          User workflow
+         </h4>
+         <ul>
+          <li>
+           User logs in to the application.
+          </li>
+          <li>
+           Uploads a news article or enters its text.
+          </li>
+          <li>
+           The system preprocesses the text using a text-processing pipeline.
+          </li>
+          <li>
+           A machine-learning classifier analyzes the content and returns a fake/real prediction with a score.
+          </li>
+          <li>
+           The result helps the user decide whether to investigate the article further.
+          </li>
+         </ul>
+         <h4>
+          How it works
+         </h4>
+         <p>
+          <b>
+           Text preprocessing:
+          </b>
+          Cleans and prepares the article text using NLTK.
+         </p>
+         <p>
+          <b>
+           Classification:
+          </b>
+          Uses the Logistic Regression model to estimate whether the submitted article resembles the fake or reliable examples in its training data.
+         </p>
+         <p>
+          <b>
+           Result:
+          </b>
+          Displays the predicted label and model score. This is an automated prediction, not a guarantee of factual accuracy; users should verify important claims with trusted sources.
+         </p>
+        </div>
+       </details>
+       <a class="btn pill" href="https://github.com/Saitej2604" rel="noopener" target="_blank">
+        See GitHub
+       </a>
+      </div>
+      <div aria-hidden="true" class="art art-news">
+       <svg role="img" viewbox="0 0 360 250">
+        <rect fill="#fff" height="210" rx="18" stroke="#e3e5ed" width="308" x="26" y="20">
+        </rect>
+        <rect fill="#25283b" height="38" rx="18" width="308" x="26" y="20">
+        </rect>
+        <path d="M26 40h308v18H26z" fill="#25283b">
+        </path>
+        <circle cx="47" cy="39" fill="#f0c24e" r="7">
+        </circle>
+        <text fill="#fff" font-size="10" font-weight="700" x="63" y="43">
+         NEWS CREDIBILITY CHECK
+        </text>
+        <rect fill="#f2e8c9" height="70" rx="9" width="116" x="44" y="76">
+        </rect>
+        <path d="M54 129l27-30 19 17 17-22 32 34z" fill="#d1bb7c">
+        </path>
+        <circle cx="133" cy="91" fill="#e4c978" r="7">
+        </circle>
+        <rect fill="#292d43" height="8" rx="4" width="136" x="174" y="79">
+        </rect>
+        <rect fill="#d9dbe4" height="6" rx="3" width="126" x="174" y="96">
+        </rect>
+        <rect fill="#d9dbe4" height="6" rx="3" width="117" x="174" y="109">
+        </rect>
+        <rect fill="#d9dbe4" height="6" rx="3" width="91" x="174" y="122">
+        </rect>
+        <rect fill="#f7f8fb" height="51" rx="11" stroke="#e7e8ee" width="272" x="44" y="160">
+        </rect>
+        <text fill="#999baa" font-size="8" font-weight="700" letter-spacing="1" x="58" y="177">
+         MODEL PREDICTION
+        </text>
+        <rect fill="#e2e4eb" height="7" rx="3.5" width="168" x="58" y="187">
+        </rect>
+        <rect fill="#d8b44d" height="7" rx="3.5" width="112" x="58" y="187">
+        </rect>
+        <rect fill="#fff1d0" height="25" rx="12.5" width="58" x="244" y="173">
+        </rect>
+        <text fill="#80621b" font-size="9" font-weight="700" text-anchor="middle" x="273" y="189">
+         SCORE
+        </text>
+        <circle cx="311" cy="69" fill="#f0c24e" r="13">
+        </circle>
+        <path d="M305 69h12M311 63v12" stroke="#25283b" stroke-linecap="round" stroke-width="2">
+        </path>
+       </svg>
+       <span class="art-label">
+        text analysis &middot; PREDICTION SCORE
+       </span>
+      </div>
+     </article>
+    </div>
+   </div>
+   <div class="inner sec" id="experience">
+    <h2>
+     Experience
+    </h2>
+    <p class="sub">
+     Two virtual internships in 2024.
+    </p>
+    <div class="xp">
+     <article>
+      <p class="when">
+       May 2024 to July 2024 &middot; 3 months
+      </p>
+      <h3>
+       Python Stack Development Intern
+      </h3>
+      <p class="org">
+       Infosys Springboard
+      </p>
+      <ul>
+       <li>
+        Built database-backed web apps with Python and Django, following Agile practices.
+       </li>
+       <li>
+        Split code into reusable components, which made it modular and easier to debug.
+       </li>
+       <li>
+        Used Git and GitHub with peers for branching and code reviews.
+       </li>
+      </ul>
+      <button class="certificate-view" data-certificate="Python Stack Development Internship" data-issuer="Infosys Springboard" type="button" data-image="images/infosysintern.png">
+       View Certificate
+       <span aria-hidden="true">
+        &nearrow;
+       </span>
+      </button>
+     </article>
+     <article>
+      <p class="when">
+       Nov 2024 to Dec 2024 &middot; 1 month
+      </p>
+      <h3>
+       AI Intern
+      </h3>
+      <p class="org">
+       CodTech IT Solutions
+      </p>
+      <ul>
+       <li>
+        Developed a rule-based chatbot that replies to user queries from predefined patterns.
+       </li>
+       <li>
+        Designed conversation flows and intent matching to make answers more accurate.
+       </li>
+      </ul>
+      <button class="certificate-view" data-certificate="AI Internship" data-issuer="CodTech IT Solutions" type="button" data-image="images/codtech.png">
+       View Certificate
+       <span aria-hidden="true">
+        &nearrow;
+       </span>
+      </button>
+     </article>
+    </div>
+   </div>
+   <div class="inner sec" id="skills">
+    <p class="skills-eyebrow">
+     MY TOOLKIT
+    </p>
+    <h2>
+     Technical Skills
+    </h2>
+    <p class="sub">
+     Technologies and concepts I use to build practical applications.
+    </p>
+    <div class="skill-grid">
+     <article class="skill-tile">
+      <div class="skill-icon">
+       { }
+      </div>
+      <h3>
+       Languages
+      </h3>
+      <p>
+       Programming &amp; databases
+      </p>
+      <div class="skill-chips">
+       <span>
+        <img alt="" class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
+        Python
+       </span>
+       <span>
+        <img alt="" class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"/>
+        MySQL
+       </span>
+       <span>
+        <img alt="" class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+        HTML
+       </span>
+       <span>
+        <img alt="" class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"/>
+        C#
+       </span>
+      </div>
+     </article>
+     <article class="skill-tile">
+      <div class="skill-icon">
+       ◈
+      </div>
+      <h3>
+       Frameworks
+      </h3>
+      <p>
+       Web application development
+      </p>
+      <div class="skill-chips">
+       <span>
+        <img alt="" class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"/>
+        Django
+       </span>
+       <span>
+        <img alt="" class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"/>
+        Flask
+       </span>
+       <span>
+        <img alt="" class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"/>
+        .NET
+       </span>
+      </div>
+     </article>
+     <article class="skill-tile">
+      <div class="skill-icon">
+       ⌘
+      </div>
+      <h3>
+       Developer Tools
+      </h3>
+      <p>
+       Development &amp; collaboration
+      </p>
+      <div class="skill-chips">
+       <span>
+        <img alt="" class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
+        Git
+       </span>
+       <span>
+        <img alt="" class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+        GitHub
+       </span>
+       <span>
+        <img alt="" class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"/>
+        VS Code
+       </span>
+       <span>
+        <img alt="" class="tech-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"/>
+        Visual Studio IDE
+       </span>
+      </div>
+     </article>
+     <article class="skill-tile">
+      <div class="skill-icon">
+       ◎
+      </div>
+      <h3>
+       Core Concepts
+      </h3>
+      <p>
+       Engineering foundations
+      </p>
+      <div class="skill-chips">
+       <span>
+        SDLC
+       </span>
+       <span>
+        OOP
+       </span>
+       <span>
+        Agile Methodology
+       </span>
+      </div>
+     </article>
+    </div>
+    <div class="certificate-section" id="certificates">
+     <p class="skills-eyebrow">
+      CONTINUOUS LEARNING
+     </p>
+     <h2>
+      Certifications
+     </h2>
+     <p class="sub">
+      Courses and certifications supporting my technical foundation.
+     </p>
+     <div class="certificate-grid">
+      <article class="certificate-card">
+       <div aria-label="Infosys logo" class="certificate-symbol issuer-mark infosys-mark">
+        <span>
+         Infosys
+        </span>
+       </div>
+       <div class="certificate-info">
+        <h3>
+         Python Fundamentals
+        </h3>
+        <p>
+         Infosys Springboard
+        </p>
+       </div>
+       <button class="certificate-view" data-certificate="Python Fundamentals" data-issuer="Infosys Springboard" type="button" data-image="images/python.png">
+        View Certificate
+        <span aria-hidden="true">
+         &nearrow;
+        </span>
+       </button>
+      </article>
+      <article class="certificate-card">
+       <div aria-label="Infosys logo" class="certificate-symbol issuer-mark infosys-mark">
+        <span>
+         Infosys
+        </span>
+        
+       </div>
+      
+       <div class="certificate-info">
+        <h3>
+        HTML5
+        </h3>
+        <p>
+         Infosys Springboard
+        </p>
+       </div>
+       <button class="certificate-view" data-certificate="HTML5" data-issuer="Infosys Springboard" type="button" data-image="images/html5.png">
+        View Certificate
+        <span aria-hidden="true">
+         &nearrow;
+        </span>
+       </button>
+      </article>
+      <article class="certificate-card">
+       <div aria-label="Infosys logo" class="certificate-symbol issuer-mark infosys-mark">
+        <span>
+         Infosys
+        </span>
+        
+       </div>
+       
+       
+       
+
+       
+
+
+
+
+
+
+       <div class="certificate-info">
+        <h3>
+         Database Management Systems (DBMS)
+        </h3>
+        <p>
+         Infosys Springboard
+        </p>
+       </div>
+       <button class="certificate-view" data-certificate="Database Management Systems (DBMS)" data-issuer="Infosys Springboard" type="button" data-image="images/dbms.png">
+        View Certificate
+        <span aria-hidden="true">
+         &nearrow;
+        </span>
+       </button>
+      </article>
+      <article class="certificate-card">
+       <div aria-label="Coursera logo" class="certificate-symbol issuer-mark coursera-mark">
+        <span>
+         C
+        </span>
+       </div>
+       <div class="certificate-info">
+        <h3>
+         AI for Everyone
+        </h3>
+        <p>
+         Coursera
+        </p>
+       </div>
+       <button class="certificate-view" data-certificate="AI for Everyone" data-issuer="Coursera" type="button" data-image="images/aiforeveryone.jpg">
+        View Certificate
+        <span aria-hidden="true">
+         &nearrow;
+        </span>
+       </button>
+      </article>
+      <article class="certificate-card">
+       <div aria-label="Great Learning logo" class="certificate-symbol issuer-mark greatlearning-mark">
+        <span>
+         GL
+        </span>
+       </div>
+       <div class="certificate-info">
+        <h3>
+         Data Structures in C
+        </h3>
+        <p>
+         Great Learning
+        </p>
+       </div>
+       <button class="certificate-view" data-certificate="Data Structures in C" data-issuer="Great Learning" type="button" data-image="images/ds.png">
+        View Certificate
+        <span aria-hidden="true">
+         &nearrow;
+        </span>
+       </button>
+      </article>
+     </div>
+    </div>
+   </div>
+   <div class="inner sec" id="notes">
+    <p class="skills-eyebrow">
+     BUILD LOG
+    </p>
+    <h2>
+     Notes
+    </h2>
+    <p class="sub">
+     Two short write-ups on how I build and what the internships taught me.
+    </p>
+    <div class="notes">
+     <article class="note">
+      <p class="when">Project note</p>
+      <h3>How I wired the transcript summarizer</h3>
+      <p>
+       The app is a small Flask service with a login, one form, and a result page. A signed-in user pastes a YouTube URL. The server pulls the available transcript, sends that text to the Google Generative AI API, and stores a short summary the user can read immediately.
+      </p>
+      <p>
+       Follow-up questions stay useful only if the model still sees the summary. I keep that summary in the request context instead of asking the model to remember the video. If a video has no transcript, the page says so instead of inventing one. The hard part was not the summary itself. It was keeping login, transcript fetch, and the question box as separate steps so a failure in one does not blank the whole page.
+      </p>
+     </article>
+     <article class="note">
+      <p class="when">Internship note &middot; Infosys Springboard, 2024</p>
+      <h3>What I learned splitting a Django app</h3>
+      <p>
+       On the Python stack internship I stopped putting every view, query, and template trick in one file. Database-backed pages were easier to review once each feature had its own module and the template only rendered what the view passed in.
+      </p>
+      <p>
+       Agile standups and GitHub reviews changed how I write. A branch per task, a short pull request, and a teammate reading the diff caught bugs I had already stopped seeing. That habit is what I still use on ViSiOCR and the fake-news classifier: small pieces, a clear data path, and someone else able to run it.
+      </p>
+     </article>
+    </div>
+   </div>
+   <div class="inner sec" id="contact">
+    <h2 class="connect-title">
+     Let&rsquo;s Connect
+    </h2>
+    <p class="sub">
+     Have an opportunity, a project idea, or a question? Send me a message &mdash; I&rsquo;d be happy to connect.
+    </p>
+    <div class="contact-layout">
+     <form class="contact-form" id="contactForm">
+      <div class="field">
+       <label for="contactName">
+        Your name
+       </label>
+       <input autocomplete="name" id="contactName" name="name" placeholder="Enter your name" required="" type="text"/>
+      </div>
+      <div class="field">
+       <label for="contactEmail">
+        Email address
+       </label>
+       <input autocomplete="email" id="contactEmail" name="email" placeholder="you@example.com" required="" type="email"/>
+      </div>
+      <div class="field">
+       <label for="contactPhone">
+        Phone number
+        <span style="font-weight:400;color:var(--muted)">
+         (optional)
+        </span>
+       </label>
+       <input autocomplete="tel" id="contactPhone" name="phone" placeholder="Your contact number" type="tel"/>
+      </div>
+      <div class="field">
+       <label for="contactReason">
+        Why would you like to contact me?
+       </label>
+       <textarea id="contactReason" name="message" placeholder="Tell me a little about the opportunity, project, or question..." required=""></textarea>
+      </div>
+      <button class="btn pill submit-btn" type="submit">
+       Send message
+       <span aria-hidden="true">
+        &nearrow;
+       </span>
+      </button>
+      <p class="contact-note">
+       Your message will open in Gmail with the details filled in. Review it and press Send. If Gmail does not open, use the email link on the right.
+      </p>
+     </form>
+     <div>
+      <div class="contact-info">
+       <div class="line">
+        <span class="k">
+         Email
+        </span>
+        <span class="v">
+         <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=saitejreddy190@gmail.com" rel="noopener" target="_blank">
+          saitejreddy190@gmail.com
+         </a>
+        </span>
+       </div>
+       <div class="line">
+        <span class="k">
+         Phone
+        </span>
+        <span class="v">
+         <a href="tel:+919381009464">
+          +91 9381009464
+         </a>
+        </span>
+       </div>
+       <div class="line">
+        <span class="k">
+         WhatsApp
+        </span>
+        <span class="v">
+         <a href="https://api.whatsapp.com/send?phone=919381009464">
+          Chat with me on WhatsApp &nearrow;
+         </a>
+        </span>
+       </div>
+       <div class="line">
+        <span class="k">
+         LinkedIn
+        </span>
+        <span class="v">
+         <a href="https://www.linkedin.com/in/sai-teja-bomma/" rel="noopener" target="_blank">
+          linkedin.com/in/sai-teja-bomma &nearrow;
+         </a>
+        </span>
+       </div>
+      </div>
+      <div class="contact-links">
+       <a class="btn outline" href="https://www.linkedin.com/in/sai-teja-bomma/" rel="noopener" target="_blank">
+        <svg aria-hidden="true" class="social-icon" fill="currentColor" viewbox="0 0 24 24">
+         <path d="M5.2 3.5a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4ZM3.3 9h3.8v12H3.3V9Zm6.1 0H13v1.6h.1c.5-.9 1.7-1.9 3.6-1.9 3.9 0 4.6 2.5 4.6 5.8V21h-3.8v-5.8c0-1.4 0-3.1-1.9-3.1s-2.2 1.5-2.2 3V21H9.4V9Z">
+         </path>
+        </svg>
+        Connect on LinkedIn
+       </a>
+       <a class="btn outline" href="https://api.whatsapp.com/send?phone=919381009464">
+        <svg aria-hidden="true" class="social-icon" fill="currentColor" viewbox="0 0 24 24">
+         <path d="M20.5 3.5A11.8 11.8 0 0 0 2 17.7L.5 23.5l6-1.6a11.8 11.8 0 0 0 5.6 1.4h.1A11.8 11.8 0 0 0 20.5 3.5ZM12.2 21.3a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.5.9.9-3.4-.2-.4a9.8 9.8 0 1 1 8.2 4.5Zm5.4-7.3c-.3-.2-1.7-.9-2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8 8 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.5 0-.6s-.7-1.7-1-2.3c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.2-1.2 2.8 1.2 3.2 1.4 3.4c.2.2 2.4 3.7 5.8 5.1.8.3 1.4.5 1.9.6.8.2 1.5.2 2 .1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.2-.3-.3-.6-.4Z">
+         </path>
+        </svg>
+        WhatsApp me
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+  </main>
+  <footer>
+   <svg aria-hidden="true" class="wave" preserveaspectratio="none" viewbox="0 0 1440 120">
+    <path d="M0 70C220 8 440 128 740 70C1030 14 1240 6 1440 62V120H0Z" fill="#f0c24e">
+    </path>
+   </svg>
+   <div class="foot">
+    <div class="inner">
+     <div class="icons">
+      <a aria-label="LinkedIn" href="https://www.linkedin.com/in/sai-teja-bomma/" rel="noopener" target="_blank">
+       <svg viewbox="0 0 24 24">
+        <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11.5H3V9.75Zm6.5 0h3.8v1.6h.06c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05v5.9h-4v-5.23c0-1.25-.02-2.85-1.74-2.85-1.74 0-2 1.36-2 2.76v5.32h-4V9.75Z">
+        </path>
+       </svg>
+      </a>
+      <a aria-label="GitHub" href="https://github.com/Saitej2604" rel="noopener" target="_blank">
+       <svg viewbox="0 0 24 24">
+        <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.9.83.09-.64.35-1.08.63-1.33-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z">
+        </path>
+       </svg>
+      </a>
+     </div>
+     <small>
+      &copy; 2026 Sai Teja Bomma &middot; Hyderabad
+     </small>
+    </div>
+   </div>
+  </footer>
+  <script defer src="script.js">
+  </script>
+   <script defer src="motion.js"></script>
+ </body>
+</html>
